@@ -82,8 +82,8 @@ h1 {
   background-position: center;
 }
 
-/* Dino box */
-.dino {
+/* fish box */
+.fish {
   width: 30px;
   height: 30px;
   position: absolute;
@@ -92,7 +92,7 @@ h1 {
   transition: bottom 0.3s;
 }
 
-/* Dino jumps on hover or focus */
+/* fish jumps on hover or focus */
 .jump {
   animation: jump 0.5s infinite;
 }
