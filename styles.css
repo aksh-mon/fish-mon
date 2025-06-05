@@ -1,0 +1,130 @@
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+    sans-serif;
+  text-align: center;
+  background: linear-gradient(
+    90deg,      
+    rgba(18, 179, 204, 1) 28%,
+    rgb(227, 227, 230) 50%,
+    rgba(0, 68, 255, 0.83) 96%
+  );
+}
+.header {
+  width: 600px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+h1 {
+  background: linear-gradient(
+    90deg,
+    rgb(30, 172, 194) 28%,
+    rgb(227, 227, 230) 50%,
+    rgba(15, 69, 217, 0.83) 96%
+  );
+  font-size: 32px;
+  padding: 5px 15px;    
+  color: rgba(210, 216, 217, 0.722);
+  font-family: monospace;
+}
+
+#score {
+  background: linear-gradient(
+    90deg,
+    rgb(30, 172, 194) 28%, 
+    rgb(227, 227, 230) 50%,
+    rgba(15, 69, 217, 0.83) 96%
+  );
+  font-size: 32px;
+  padding: 5px 15px;
+  color: rgba(210, 216, 217, 0.722);
+  font-family: monospace;
+}
+
+.btn {
+  background: linear-gradient(
+    90deg,
+    rgb(30, 172, 194) 28%,
+    rgb(227, 227, 230) 50%,
+    rgba(15, 69, 217, 0.83) 96%
+  );
+  font-size: 32px;
+  padding: 5px 15px;
+  color: rgba(210, 216, 217, 0.722);
+  font-family: monospace;
+  border: none;
+  margin-top: 10px;
+  cursor: pointer;
+}
+#score span {
+  margin-left: 70px;
+}
+.game {
+  width: 600px;
+  height: 200px;
+  margin: 10px auto;
+  position: relative;
+  overflow: hidden;
+
+  /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'%3E%3Crect y='222.041' fill='%233FA9F5' width='518' height='288'/%3E%3Cpath fill='%23FFD248' d='M381.388,222.041H130.612c0-69.277,56.111-130.612,125.388-130.612S381.388,152.764,381.388,222.041z'/%3E%3Cpath d='M388.995,214.204C384.93,142.633,325.686,83.592,256,83.592s-128.93,59.041-132.995,130.612H0v15.673h512v-15.673H388.995z M173.022,136.141c22.484-23.78,51.954-36.875,82.978-36.875s60.494,13.096,82.978,36.875c20.139,21.299,32.398,49.382,34.304,78.063H138.718C140.623,185.522,152.882,157.439,173.022,136.141z'/%3E%3Cpolygon points='120.141,347.013 151.179,322.203 141.392,309.961 120.141,326.946 93.992,306.046 67.893,326.94 46.694,309.965 36.897,322.198 67.892,347.019 93.999,326.117'/%3E%3Cpolygon points='350.019,452.334 323.869,431.434 297.771,452.328 276.572,435.353 266.775,447.586 297.77,472.407 323.877,451.505 350.019,472.4 381.057,447.59 371.27,435.348'/%3E%3Cpolygon points='308.223,326.115 339.261,301.305 329.474,289.063 308.223,306.049 282.073,285.148 255.975,306.042 234.776,289.067 224.979,301.301 255.974,326.121 282.081,305.219'/%3E%3Cpolygon points='464.958,358.293 438.808,337.393 412.71,358.287 391.511,341.312 381.714,353.545 412.709,378.366 438.815,357.464 464.958,378.36 495.995,353.55 486.209,341.308'/%3E%3Cpolygon points='172.386,420.987 146.237,400.087 120.138,420.981 98.939,404.006 89.142,416.239 120.137,441.06 146.244,420.158 172.386,441.053 203.424,416.243 193.637,404.001'/%3E%3Crect x='248.163' y='7.837' width='15.673' height='52.245'/%3E%3Crect x='370.94' y='52.502' transform='matrix(-0.7071 -0.7071 0.7071 -0.7071 591.2012 401.6104)' width='15.673' height='51.722'/%3E%3Crect x='112.586' y='70.534' transform='matrix(-0.7071 -0.7071 0.7071 -0.7071 180.9276 231.6841)' width='51.722' height='15.673'/%3E%3Crect x='407.51' y='172.408' width='47.02' height='15.673'/%3E%3Crect x='57.469' y='172.408' width='47.02' height='15.673'/%3E%3C/svg%3E");
+  background-size: cover; */
+
+  background: linear-gradient(
+    178deg,
+    rgba(34, 161, 212, 1) 57%,
+    rgba(83, 88, 237, 1) 65%
+  );
+
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Dino box */
+.dino {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  bottom: 0;
+  left: 50px;
+  transition: bottom 0.3s;
+}
+
+/* Dino jumps on hover or focus */
+.jump {
+  animation: jump 0.5s infinite;
+}
+
+@keyframes jump {
+  0% {
+    bottom: 0;
+  }
+  50% {
+    bottom: 120px;
+  }
+  100% {
+    bottom: 0;
+  }
+}
+
+/* Cactus obstacle */
+.cactus {
+  width: 25px;
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  bottom: 12px;
+  animation: moveCactus 2s linear infinite;
+}
+
+@keyframes moveCactus {
+  0% {
+    right: -30px;
+  }
+  100% {
+    right: 100%;
+  }
+}
