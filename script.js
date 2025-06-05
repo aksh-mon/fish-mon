@@ -1,5 +1,6 @@
 
 const dino = document.getElementById("fish");
+
 const cactus = document.getElementById("cactus");
 const scoreText = document.getElementById("score");
 
@@ -7,7 +8,6 @@ let isJumping = false;
 let isAlive = true;
 let score = 0;
 let cactusInterval;
- 
 function jump() {
   if (isJumping) return;
   isJumping = true;

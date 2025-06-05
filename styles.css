@@ -93,6 +93,7 @@ h1 {
 }
 
 /* fish jumps on hover or focus */
+
 .jump {
   animation: jump 0.5s infinite;
 }
